@@ -6,27 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheets/style.css"/>
-    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="q1">
         <h2>What is the name and project number?</h2>
+        <form id="frm1" action="/action_page.php">
+            project name: <input type="text" name="fname"><br>
+            proj. number: <input type="text" name="lname"><br>
+            <input type="button" onclick="myFunction()" value="Submit">
+        </form>
     </div>
     <div class="q2">
         <h2>Are you searching or saving?</h2>
+        <form>
+            <select id="mySelect">
+              <option>Searching</option>
+              <option>Saving</option>
+            </select>
     </div>
     <div class="q3">
         <h2>Which phase of the project are you referring to?</h2>
+        <form>
+            <select id="mySelect">
+              <option>Admin - Internal Project Admin and Project Management</option>
+              <option>Invest - Investigation Phase</option>
+              <option>Design - Typical refering to Bid Pacakge for Restoration</option>
+              <option>Draft - Drafting and BIM </option>
+              <option>CA - Contract Administration Phase</option>
+            </select>
     </div>
     <div class="q4">
         <h2 class="Admin">Admin </h2>
+        <form>
+            <select id="mySelect">
+              <option>Proposal - for use by the PX/PP and Marketing
+            </option>
+              <option>Project Management
+            </option>
+              <option>All Emails - Internal or external
+            </option>
+              <option>Quality Management - for use by the project team</option>
+            </select>
         <h2 class="Invest">Investigation </h2>
+        <form>
+            <select id="mySelect">
+              <option>Investigation Info - Existing information sent by Client such as pre-existing drawings, etc. </option>
+              <option>Photos - Investigation photographs
+            </option>
+              <option>Reports - Investigation Reports or Short Letter Reports
+            </option>
+            </select>
         <h2 class="Design">Design </h2>
+        <form>
+            <select id="mySelect">
+              <option>BID Packages - Project Tender Package</option>
+              <option>BIDs Received</option>
+              <option>Design - Drawing/spec packages for use by the project team </option>
+              <option>Modeling of conditions/details for use by the project team </option>
+            </select>
         <h2 class="Draft">Drafting </h2>
+        <form>
+            <select id="mySelect">
+              <option>Issued</option>
+              <option>Markups</option>
+              <option>Structure</option>
+              <option>Architecture</option>
+              <option>Mechanical</option>
+              <option>Elecrical</option>
+              <option>Landscape</option>
+              <option>Exist</option>
+              <option>Other</option>
+            </select>
         <h2 class="CA">Contract Administration </h2>
+        <form>
+            <select id="mySelect">
+                <option>Contract - Contract and Changes to Contract, inlcudes CA tracking sheet
+                </option>
+                <option>MM - Meeting Minutes
+                </option>
+                <option>SRR - Site Review Reports
+                </option>
+                <option>Photos</option>
+                <option>SIs & SDNs - Site Instructions and Structural Design Notices
+                </option>
+                <option>RFIs - Request for Information
+                </option>
+                <option>Submittals - Warranty, Inspectiong and Testing, Product Data Sheets, etc.
+                </option>
+                <option>Shop Dwgs - Shop Drawing Reviews
+                </option>
+            </select>
+    </div>
+    <div>
+        <h2 class="Naming"> What is your full name?</h2>
+        <form id="frm1" action="/action_page.php">
+            project name: <input type="text" name="fname"><br>
+            <input type="button" onclick="myFunction()" value="Submit">
+        </form>
+        <h2 class="VersionCtrl"> What version are you saving?</h2>
+        <form>
+            <select id="mySelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
     </div>
     <div class="outputs">
         <h2 class="Name_Location">File Name & Location</h2>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
