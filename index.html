@@ -11,8 +11,8 @@
     <div class="q1">
         <h2>What is the name and project number?</h2>
         <form id="frm1" action="/action_page.php">
-            project name: <input type="text" name="pname"><br>
-            proj. number: <input type="text" name="pnumb"><br>
+            project name: <input id = "pnme" type="text" name="pname"><br>
+            proj. number: <input id = "pnum" type="text" name="pnumb"><br>
         </form>
         <input type="button" onclick="myFunction()" value="Next">
     </div>
@@ -38,7 +38,7 @@
     <div class="q4">
         <div class="Admin">
             <h2>Admin </h2>
-            <select id="mySelect">
+            <select id="mySelect0">
                 <option>Proposal - for use by the PX/PP and Marketing</option>
                 <option>Project Management</option>
                 <option>All Emails - Internal or external</option>
@@ -48,7 +48,7 @@
         </div>   
         <div class="Invest"> 
             <h2>Investigation </h2>
-            <select id="mySelect">
+            <select id="mySelect1">
                 <option>Investigation Info - Existing information sent by Client such as pre-existing drawings, etc. </option>
                 <option>Photos - Investigation photographs</option>
                 <option>Reports - Investigation Reports or Short Letter Reports</option>
@@ -57,7 +57,7 @@
         </div>
         <div class="Design">
             <h2>Design </h2>
-            <select id="mySelect">
+            <select id="mySelect2">
                 <option>BID Packages - Project Tender Package</option>
                 <option>BIDs Received</option>
                 <option>Design - Drawing/spec packages for use by the project team </option>
@@ -67,7 +67,7 @@
         </div>
         <div class="Draft"> 
             <h2>Drafting </h2>
-            <select id="mySelect">
+            <select id="mySelect3">
                 <option>Issued</option>
                 <option>Markups</option>
                 <option>Structure</option>
@@ -82,7 +82,7 @@
         </div>
         <div class="CA">
             <h2>Contract Administration </h2>
-            <select id="mySelect">
+            <select id="mySelect4">
                 <option>Contract - Contract and Changes to Contract, inlcudes CA tracking sheet</option>
                 <option>MM - Meeting Minutes</option>
                 <option>SRR - Site Review Reports</option>
