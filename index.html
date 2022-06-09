@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>filesearch</title>
     <link rel="stylesheet" href="stylesheets/style.css"/>
 </head>
+
+<!-- first query -->
+
 <body>
     <div class="q1">
-        <h2>What is the name and project number?</h2>
-        <form id="frm1" action="/action_page.php">
-            project name: <input id = "pnme" type="text" name="pname"><br>
-            proj. number: <input id = "pnum" type="text" name="pnumb"><br>
-        </form>
-        <input type="button" onclick="myFunction()" value="Next">
+        <h2>Project name & number</h2>
+        project name: <input id = "pnme" type="text"><br>
+        proj. number: <input id = "pnum" type="text"><br>
+        <input type="button" onclick="myFunction0()" value="Next">
     </div>
+
+<!-- second query -->
+
     <div class="q2">
         <h2>Are you searching or saving?</h2>
-        <select id="mySelect">
+        <select id="mySelect5">
             <option>Searching</option>
             <option>Saving</option>
         </select>
         <input type="button" onclick="myFunction2()" value="Next">
     </div>
+
+<!-- third query -->
+
     <div class="q3">
         <h2>Which phase of the project are you referring to?</h2>
-        <select id="mySelects">
+        <select id="mySelect6">
             <option>Admin - Internal Project Admin and Project Management</option>
             <option>Invest - Investigation Phase</option>
             <option>Design - Typical refering to Bid Pacakge for Restoration</option>
@@ -35,6 +42,9 @@
         </select>
         <input type="button" onclick="myFunction3()" value="Next">
     </div>
+
+<!-- fourth query -->
+
     <div class="q4">
         <div class="Admin">
             <h2>Admin </h2>
@@ -45,7 +55,8 @@
                 <option>Quality Management - for use by the project team</option>
             </select>
             <input type="button" onclick="myFunction4()" value="Next"> 
-        </div>   
+        </div>
+
         <div class="Invest"> 
             <h2>Investigation </h2>
             <select id="mySelect1">
@@ -55,6 +66,7 @@
             </select>
             <input type="button" onclick="myFunction4()" value="Next"> 
         </div>
+
         <div class="Design">
             <h2>Design </h2>
             <select id="mySelect2">
@@ -65,6 +77,7 @@
             </select>
             <input type="button" onclick="myFunction4()" value="Next">
         </div>
+        
         <div class="Draft"> 
             <h2>Drafting </h2>
             <select id="mySelect3">
@@ -80,6 +93,7 @@
             </select>
             <input type="button" onclick="myFunction4()" value="Next"> 
         </div>
+        
         <div class="CA">
             <h2>Contract Administration </h2>
             <select id="mySelect4">
@@ -95,29 +109,39 @@
             <input type="button" onclick="myFunction4()" value="Next">
         </div>
     </div>
+
+<!-- naming and version ctrl  -->
+
     <div class="NamingVersionCtrl">
         <h2> What is your full name?</h2>
-        <form id="frm1" action="/action_page.php">
-            file name: <input type="text" name="fname"><br>
-        </form>
+        Name: <input type="text" id="pname"><br>
+        <h2> Name your file</h2>
+        File Name: <input type="text" id="fname"><br>
         <h2> What version are you saving?</h2>
-        <form>
-            <select id="mySelect">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-            </select>
-        <br><input type="button" onclick="myFunction5()" value="Submit">
+        <select id="mySelect7">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
     </div>
-    <div class="outputs">
+    
+    <div class="flsub">
+        <br><input type="button" id="flsub" onclick="myFunction5()" value="Submit">
+    </div>
+    
+    <div class="output0">
         <h2 class="Name_Location">File Name & Location</h2>
     </div>
+
+    <div class="output1">
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
